@@ -6,15 +6,24 @@ const wordCounter = (value) => {
 
   if (value) {
     // COMPLETE THE LOGIC 
-    wordCount.innerHTML = `Word Count: 0`; 
+    let words = document.querySelector('textarea').value;
+    const wordsArr = words.split(" ")
+    let wordCounter = 0;
+    for (item of wordsArr) {
+      wordCounter += 1;
+    }
+    wordCount.innerHTML = `Word Count: ${wordCounter}`; 
   } else {
     // if the value is empty, set the error message value to "Please input text"
-    error.innerHTML = ""; // UPDATE THIS
+    error.innerHTML = "Please input text"; // UPDATE THIS
+    
+    
   }
 }
 
 // OPTIONAL CHALLENGE
 const toggleMode = (btnText) => {
+
   // complete the function
 }
 
