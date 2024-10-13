@@ -15,7 +15,7 @@ textarea {
 }
 
 label {
-  color: blue;
+  color: green;
 }
 
 .btn {
@@ -31,4 +31,28 @@ label {
 
 #word-count {
   margin: 10px;
+}
+
+#error-msg {
+  color: red;
+  font-weight: bold;
+  font-size: 30px;
+  text-align: center;
+}
+
+.dark-mode {
+  background-color: black;
+  color: white;
+}
+
+.dark-mode button {
+  background-color: darkblue;
+}
+
+.dark-mode button:hover {
+  background-color: blue;
+}
+
+.dark-mode label {
+  color: black;
 }
