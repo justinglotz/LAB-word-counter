@@ -15,7 +15,7 @@ const wordCounter = (value) => {
     wordCount.innerHTML = `Word Count: ${wordCounter}`; 
   } else {
     // if the value is empty, set the error message value to "Please input text"
-    error.innerHTML = "Please input text"; // UPDATE THIS
+    error.innerHTML = "<p id='error-msg'>Please input text</p>"; // UPDATE THIS
     
     
   }
