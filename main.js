@@ -23,9 +23,20 @@ const wordCounter = (value) => {
 
 // OPTIONAL CHALLENGE
 const toggleMode = (btnText) => {
-
+  
   // complete the function
 }
+
+const darkMode = () => {
+  let element = document.body;
+  element.classList.toggle("dark-mode");
+  if (element.classList.contains("dark-mode")) {
+    toggleButton.textContent = "Dark Mode";
+  } else {
+    toggleButton.textContent = "Light Mode";
+  }
+}
+
 
 // ************************************************ //
 // **** DO NOT MODIFY THE CODE BELOW THIS LINE **** //
@@ -52,6 +63,9 @@ form.addEventListener("reset", () => {
   wordCount.innerHTML = ""; // on reset, clear the innderHTML
 });
 
-toggleButton.addEventListener("click", (event) => {
-  toggleMode(event.target.innerHTML);
+// toggleButton.addEventListener("click", (event) => {
+//   toggleMode(event.target.innerHTML);
+// });
+toggleButton.addEventListener("click", () => {
+  darkMode();
 });
